@@ -71,7 +71,7 @@
             MAS_VIEW *v = self[i];
             [v mas_makeConstraints:^(MASConstraintMaker *make) {
                 if (prev) {
-                    make.height.equalTo(prev);
+//                    make.height.equalTo(prev);
                     make.top.equalTo(prev.mas_bottom).offset(fixedSpacing);
                     if (i == self.count - 1) {//last one
                         make.bottom.equalTo(tempSuperView).offset(-tailSpacing);
